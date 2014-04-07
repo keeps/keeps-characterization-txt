@@ -23,7 +23,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>pt.keep.validator.TxtCharacterizationTool</mainClass>
+							<mainClass>pt.keep.validator.txt.TxtCharacterizationTool</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

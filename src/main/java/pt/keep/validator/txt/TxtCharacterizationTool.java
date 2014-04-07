@@ -1,4 +1,4 @@
-package pt.keep.validator;
+package pt.keep.validator.txt;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -20,8 +20,8 @@ import org.apache.commons.cli.GnuParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
-import pt.keep.validator.result.Result;
-import pt.keep.validator.result.ValidationInfo;
+import pt.keep.validator.txt.result.Result;
+import pt.keep.validator.txt.result.ValidationInfo;
 
 import com.ibm.icu.text.CharsetDetector;
 import com.ibm.icu.text.CharsetMatch;
@@ -43,7 +43,7 @@ public class TxtCharacterizationTool {
 			jaxbMarshaller.marshal(res, bos);
 			return bos.toString("UTF-8");
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 		return null;
 	}
@@ -95,7 +95,7 @@ public class TxtCharacterizationTool {
 				}
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			ValidationInfo validationInfo = new ValidationInfo();
 			validationInfo.setValid(false);
 			validationInfo.setValidationError(e.getMessage());

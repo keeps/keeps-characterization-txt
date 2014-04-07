@@ -1,4 +1,4 @@
-package pt.keep.validator.utils.jaxb;
+package pt.keep.validator.txt.utils.jaxb;
 
 import java.util.HashMap;
 import java.util.Map;
